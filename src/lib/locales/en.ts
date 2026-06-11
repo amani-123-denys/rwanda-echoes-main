@@ -1,0 +1,43 @@
+export const en = {
+  brand: "History of Rwanda",
+  tagline: "Land of a Thousand Hills",
+  nav: {
+    home: "Home",
+    history: "History",
+    kings: "Kings",
+    archive: "Archive",
+    map: "Map",
+    stories: "Stories",
+    news: "News",
+    memorial: "Memorial",
+  },
+  hero: {
+    eyebrow: "Land of a Thousand Hills",
+    title: "Discover Rwanda Through Time",
+    subtitle:
+      "A cinematic journey through the heritage, culture, and living memory of a nation — from ancient kingdoms to modern Rwanda.",
+    cta: "Begin the journey",
+    secondary: "Watch story",
+  },
+  sections: {
+    timeline: "Timeline",
+    timelineDesc: "Defining moments across centuries of Rwandan history.",
+    kings: "Kings & Kingdom",
+    kingsDesc: "Sovereigns who shaped the soul of a nation.",
+    culture: "Culture & Heritage",
+    cultureDesc: "The traditions that bind a people together.",
+    stories: "Oral Traditions",
+    storiesDesc: "Legends, poems, and the wisdom of elders.",
+    explore: "Explore",
+    quote: "Rwanda is the home of all of us.",
+    quoteAuthor: "Rwandan proverb",
+    cta: "Continue the journey",
+    ctaDesc: "Step into a digital museum of Rwandan memory.",
+  },
+  footer: {
+    rights: "All rights reserved",
+    about: "About",
+    contact: "Contact",
+    follow: "Follow",
+  },
+};

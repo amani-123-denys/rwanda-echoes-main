@@ -1,0 +1,43 @@
+export const rw = {
+  brand: "Amateka y'u Rwanda",
+  tagline: "Igihugu cy'imisozi igihumbi",
+  nav: {
+    home: "Ahabanza",
+    history: "Amateka",
+    kings: "Abami",
+    archive: "Ububiko",
+    map: "Ikarita",
+    stories: "Inkuru",
+    news: "Amakuru",
+    memorial: "Urwibutso",
+  },
+  hero: {
+    eyebrow: "Igihugu cy'imisozi igihumbi",
+    title: "Menya u Rwanda mu binyejana",
+    subtitle:
+      "Inzira y'amateka, umuco n'ubuzima bw'abanyarwanda — kuva ku Bami kugeza ku Rwanda rwa none.",
+    cta: "Tangira urugendo",
+    secondary: "Reba inkuru",
+  },
+  sections: {
+    timeline: "Ingengabihe",
+    timelineDesc: "Ibyabaye by'ingenzi mu mateka y'u Rwanda.",
+    kings: "Abami n'Ubwami",
+    kingsDesc: "Abategetsi b'u Rwanda bagize uruhare runini.",
+    culture: "Umuco n'Imigenzo",
+    cultureDesc: "Imico iranga abanyarwanda.",
+    stories: "Inkuru z'akahise",
+    storiesDesc: "Imigani n'imivugo y'abakurambere.",
+    explore: "Reba byinshi",
+    quote: "U Rwanda ni urugo rwa twese.",
+    quoteAuthor: "Umugani w'u Rwanda",
+    cta: "Komeza urugendo",
+    ctaDesc: "Injira mu nzu ndangamurage ya digitale y'u Rwanda.",
+  },
+  footer: {
+    rights: "Uburenganzira bwose bwitabwaho",
+    about: "Ibyerekeye",
+    contact: "Twandikire",
+    follow: "Dukurikire",
+  },
+};

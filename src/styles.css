@@ -1,0 +1,237 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * HISTORY OF RWANDA — Design System
+ * Warm ivory + Rwanda green + gold. Cinematic, editorial, African luxury.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-gold: var(--gold);
+  --color-gold-foreground: var(--gold-foreground);
+  --color-clay: var(--clay);
+  --color-ivory: var(--ivory);
+  --font-display: "Cormorant Garamond", "Cormorant", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+:root {
+  --radius: 0.5rem;
+  /* Warm ivory canvas */
+  --background: oklch(0.975 0.012 85);
+  --foreground: oklch(0.2 0.025 60);
+  --card: oklch(0.985 0.008 85);
+  --card-foreground: oklch(0.2 0.025 60);
+  --popover: oklch(0.985 0.008 85);
+  --popover-foreground: oklch(0.2 0.025 60);
+  /* Rwanda forest green */
+  --primary: oklch(0.38 0.1 155);
+  --primary-foreground: oklch(0.97 0.01 85);
+  --secondary: oklch(0.94 0.018 80);
+  --secondary-foreground: oklch(0.25 0.03 60);
+  --muted: oklch(0.93 0.015 80);
+  --muted-foreground: oklch(0.45 0.025 60);
+  --accent: oklch(0.78 0.13 75); /* gold */
+  --accent-foreground: oklch(0.2 0.04 60);
+  --destructive: oklch(0.55 0.2 28);
+  --destructive-foreground: oklch(0.97 0.01 85);
+  --border: oklch(0.88 0.02 75);
+  --input: oklch(0.9 0.018 75);
+  --ring: oklch(0.78 0.13 75);
+  --gold: oklch(0.78 0.13 75);
+  --gold-foreground: oklch(0.2 0.04 60);
+  --clay: oklch(0.55 0.15 45);
+  --ivory: oklch(0.975 0.012 85);
+  --chart-1: oklch(0.38 0.1 155);
+  --chart-2: oklch(0.78 0.13 75);
+  --chart-3: oklch(0.55 0.15 45);
+  --chart-4: oklch(0.45 0.08 200);
+  --chart-5: oklch(0.65 0.18 30);
+  --sidebar: oklch(0.97 0.01 85);
+  --sidebar-foreground: oklch(0.2 0.025 60);
+  --sidebar-primary: oklch(0.38 0.1 155);
+  --sidebar-primary-foreground: oklch(0.97 0.01 85);
+  --sidebar-accent: oklch(0.93 0.015 80);
+  --sidebar-accent-foreground: oklch(0.25 0.03 60);
+  --sidebar-border: oklch(0.88 0.02 75);
+  --sidebar-ring: oklch(0.78 0.13 75);
+}
+
+.dark {
+  --background: oklch(0.16 0.012 150);
+  --foreground: oklch(0.95 0.015 85);
+  --card: oklch(0.2 0.018 150);
+  --card-foreground: oklch(0.95 0.015 85);
+  --popover: oklch(0.2 0.018 150);
+  --popover-foreground: oklch(0.95 0.015 85);
+  --primary: oklch(0.62 0.14 160);
+  --primary-foreground: oklch(0.12 0.01 150);
+  --secondary: oklch(0.25 0.02 150);
+  --secondary-foreground: oklch(0.95 0.015 85);
+  --muted: oklch(0.23 0.018 150);
+  --muted-foreground: oklch(0.7 0.02 80);
+  --accent: oklch(0.78 0.13 75);
+  --accent-foreground: oklch(0.16 0.012 150);
+  --destructive: oklch(0.65 0.2 28);
+  --destructive-foreground: oklch(0.95 0.015 85);
+  --border: oklch(0.78 0.13 75 / 18%);
+  --input: oklch(1 0 0 / 12%);
+  --ring: oklch(0.78 0.13 75);
+  --gold: oklch(0.82 0.14 80);
+  --gold-foreground: oklch(0.16 0.012 150);
+  --clay: oklch(0.62 0.16 45);
+  --ivory: oklch(0.95 0.015 85);
+  --sidebar: oklch(0.18 0.015 150);
+  --sidebar-foreground: oklch(0.95 0.015 85);
+  --sidebar-primary: oklch(0.62 0.14 160);
+  --sidebar-primary-foreground: oklch(0.12 0.01 150);
+  --sidebar-accent: oklch(0.25 0.02 150);
+  --sidebar-accent-foreground: oklch(0.95 0.015 85);
+  --sidebar-border: oklch(0.78 0.13 75 / 20%);
+  --sidebar-ring: oklch(0.78 0.13 75);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+    transition:
+      background-color 0.5s ease,
+      color 0.5s ease;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  .font-display {
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+}
+
+@utility text-gold {
+  color: var(--gold);
+}
+@utility bg-gold {
+  background-color: var(--gold);
+}
+@utility border-gold {
+  border-color: var(--gold);
+}
+@utility text-clay {
+  color: var(--clay);
+}
+
+@utility gradient-hero {
+  background: linear-gradient(
+    180deg,
+    color-mix(in oklab, var(--background) 0%, transparent) 0%,
+    color-mix(in oklab, var(--background) 40%, transparent) 60%,
+    var(--background) 100%
+  );
+}
+
+@utility gradient-gold {
+  background: linear-gradient(
+    135deg,
+    var(--gold),
+    color-mix(in oklab, var(--gold) 70%, var(--clay))
+  );
+}
+
+@utility glass {
+  background: color-mix(in oklab, var(--background) 60%, transparent);
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+  border: 1px solid color-mix(in oklab, var(--gold) 25%, transparent);
+}
+
+@utility divider-gold {
+  display: inline-block;
+  width: 56px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translateY(0) scale(1.02);
+  }
+  50% {
+    transform: translateY(-12px) scale(1.04);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-drift {
+  animation: drift 14s ease-in-out infinite;
+}
+
+.text-shimmer {
+  background: linear-gradient(90deg, var(--gold) 0%, var(--foreground) 40%, var(--gold) 80%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 6s linear infinite;
+}

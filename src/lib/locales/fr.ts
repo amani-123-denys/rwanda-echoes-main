@@ -1,0 +1,43 @@
+export const fr = {
+  brand: "Histoire du Rwanda",
+  tagline: "Pays des mille collines",
+  nav: {
+    home: "Accueil",
+    history: "Histoire",
+    kings: "Rois",
+    archive: "Archives",
+    map: "Carte",
+    stories: "Récits",
+    news: "Actualités",
+    memorial: "Mémorial",
+  },
+  hero: {
+    eyebrow: "Pays des mille collines",
+    title: "Découvrez le Rwanda à travers le temps",
+    subtitle:
+      "Un voyage cinématographique au cœur de l'héritage, de la culture et de la mémoire vivante d'une nation.",
+    cta: "Commencer le voyage",
+    secondary: "Voir l'histoire",
+  },
+  sections: {
+    timeline: "Chronologie",
+    timelineDesc: "Les moments clés de l'histoire rwandaise.",
+    kings: "Rois & Royaume",
+    kingsDesc: "Souverains qui ont façonné une nation.",
+    culture: "Culture & Patrimoine",
+    cultureDesc: "Les traditions qui unissent un peuple.",
+    stories: "Traditions Orales",
+    storiesDesc: "Légendes, poèmes et sagesse des anciens.",
+    explore: "Explorer",
+    quote: "Le Rwanda est la maison de nous tous.",
+    quoteAuthor: "Proverbe rwandais",
+    cta: "Poursuivre le voyage",
+    ctaDesc: "Entrez dans un musée numérique de la mémoire rwandaise.",
+  },
+  footer: {
+    rights: "Tous droits réservés",
+    about: "À propos",
+    contact: "Contact",
+    follow: "Suivez-nous",
+  },
+};
